@@ -12,7 +12,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap'
-// import './App.css'
+import './App.css'
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +23,13 @@ const App = () => {
     <Router>
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Home</NavbarBrand>
+          <NavbarBrand href="/">Marcella Luz Ash</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href="/portfolio">Portfolio</NavLink>
               </NavItem>

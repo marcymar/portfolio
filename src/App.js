@@ -1,26 +1,18 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import {
-  Collapse, 
+  Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-  Container,
-  Row,
-  Col,
-  Jumbotron,
-  Button
+  NavLink
 } from 'reactstrap'
+// import './App.css'
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,18 +23,18 @@ const App = () => {
     <Router>
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand >reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Home</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/portfolio/">Portfolio</NavLink>
+                <NavLink href="/portfolio">Portfolio</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact/">Contact</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/marcymar">GitHub</NavLink>
+                <NavLink href="https://github.com/marcymar" target="_blank">GitHub</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

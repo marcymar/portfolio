@@ -7,12 +7,6 @@
 
 [Demo](#demo)
 
-[License](#license)
-
-[Contributing](#contributing)
-
-[Tests](#tests)
-
 [Questions](#questions)
 
 ---

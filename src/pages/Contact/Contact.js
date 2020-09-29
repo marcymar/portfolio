@@ -9,14 +9,41 @@ import {
 
 const Contact = () => {
   return (
-    <div>
-      <Card>
+    <div >
+      <Card color="light" style={{margin: '31px'}}>
         <CardBody>
           <CardTitle>How to contact me:</CardTitle>
           <CardSubtitle>Email: marcella@ash-photos.com</CardSubtitle>
           <CardSubtitle>Phone: (714)234-2364</CardSubtitle>
         </CardBody>
       </Card>
+      <br/>
+      <br/>
+      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
   </div>
   )
 }

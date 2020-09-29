@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+import './App.css'
 import {
   Collapse,
   Navbar,
@@ -22,7 +23,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="info" light expand="md" style={{color: "gray"}}>
           <NavbarBrand href="/">Marcella Luz Ash</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
@@ -47,6 +48,13 @@ const App = () => {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
         </Switch>
+      </div>
+      <div>
+        <Navbar color="info" light style={{fixedPosition: "absolute", bottom: "0", width: "auto"
+      }}>
+          <NavbarBrand className="mr-auto"
+          style={{fontSize: "15px"}}>marcella luz ash 2020</NavbarBrand>
+        </Navbar>
       </div>
     </Router>
   )

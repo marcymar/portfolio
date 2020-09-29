@@ -10,7 +10,7 @@ import {
 const Contact = () => {
   return (
     <div >
-      <Card color="light" style={{margin: '31px'}}>
+      <Card body outline color="info" style={{margin: '31px'}}>
         <CardBody>
           <CardTitle>How to contact me:</CardTitle>
           <CardSubtitle>Email: marcella@ash-photos.com</CardSubtitle>
